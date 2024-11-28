@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../CSS/CONTACT.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <a href="javascript:history.back()" class="back-button">← Back</a>
+
+    <div class="contact-form-container">
+        <h1>Contact Us</h1>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <div class="input-field">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+            </div>
+            <div class="input-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+            <div class="input-field">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" placeholder="Your phone number">
+            </div>
+            <div class="input-field">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="successMessage" class="success-message" style="display:none;">
+            <p>Your message has been sent successfully!</p>
+        </div>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+
+    <script src="../JAVASCRIPT/CONTACT.js"></script>
+</body>
+</html>

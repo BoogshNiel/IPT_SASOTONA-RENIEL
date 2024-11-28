@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data Form</title>
+    <link rel="stylesheet" href="./css/activity3.css">
+</head>
+<style>
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.form-title h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.photo-container {
+    text-align: center;
+}
+
+.photo-placeholder {
+    width: 120px;
+    height: 150px;
+    border: 1px solid #000;
+    background-color: #ddd;
+    margin-bottom: 5px;
+}
+
+.photo-label {
+    font-size: 12px;
+    color: #333;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.row label {
+    width: 20%;
+    font-weight: bold;
+}
+
+.row input[type="text"],
+.row input[type="date"],
+.row input[type="tel"],
+.row input[type="email"] {
+    width: 75%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.row input[type="text"]:focus,
+.row input[type="date"]:focus,
+.row input[type="tel"]:focus,
+.row input[type="email"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="photo-placeholder">
+        </div>
+        <h1> Bio Data </h1>
+        
+        <section class="personal-data">
+            <h2>Personal Data</h2>
+            <form>
+                <div class="row">
+                    <label>Position Desired:</label> <input type="text" />
+                    <label>Date:</label> <input type="date" />
+                </div>
+                <div class="row">
+                    <label>Name:</label> <input type="text" />
+                    <label>Gender:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>City Address:</label> <input type="text" />
+                    <label>Provincial Address:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>Telephone:</label> <input type="tel" />
+                    <label>Cellphone:</label> <input type="tel" />
+                </div>
+                <div class="row">
+                    <label>Email Address:</label> <input type="email" />
+                </div>
+                <div class="row">
+                    <label>Date of Birth:</label> <input type="date" />
+                    <label>Birth Place:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>Civil Status:</label> <input type="text" />
+                    <label>Citizenship:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>Height:</label> <input type="text" />
+                    <label>Weight:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>Religion:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>Spouse:</label> <input type="text" />
+                    <label>Occupation:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>Name of Children:</label> <input type="text" />
+                    <label>Date of Birth:</label> <input type="date" />
+                </div>
+                <div class="row">
+                    <label>Father's Name:</label> <input type="text" />
+                    <label>Occupation:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>Mother's Name:</label> <input type="text" />
+                    <label>Occupation:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>Languages spoken/written:</label> <input type="text" />
+                </div>
+                <div class="row">
+                    <label>Emergency Contact:</label> <input type="text" />
+                    <label>Phone number:</label> <input type="tel" />
+                </div>
+            </form>
+        </section>
+
+        <section class="educational-background">
+            <h2>Educational Background</h2>
+            <div class="row">
+                <label>Elementary:</label> <input type="text" />
+                <label>Year Graduated:</label> <input type="text" />
+            </div>
+            <div class="row">
+                <label>High School:</label> <input type="text" />
+                <label>Year Graduated:</label> <input type="text" />
+            </div>
+            <div class="row">
+                <label>College:</label> <input type="text" />
+                <label>Year Graduated:</label> <input type="text" />
+            </div>
+            <div class="row">
+                <label>Degree Received:</label> <input type="text" />
+                <label>Special Skills:</label> <input type="text" />
+            </div>
+        </section>
+
+        <section class="employment-record">
+            <h2>Employment Record</h2>
+            <div class="row">
+                <label>Company Name:</label> <input type="text" />
+                <label>Position:</label> <input type="text" />
+                <label>From:</label> <input type="date" />
+                <label>To:</label> <input type="date" />
+            </div>
+            <div class="row">
+                <label>Company Name:</label> <input type="text" />
+                <label>Position:</label> <input type="text" />
+                <label>From:</label> <input type="date" />
+                <label>To:</label> <input type="date" />
+            </div>
+        </section>
+
+        <section class="character-reference">
+            <h2>Character Reference</h2>
+            <div class="row">
+                <label>Name:</label> <input type="text" />
+                <label>Position:</label> <input type="text" />
+                <label>Company:</label> <input type="text" />
+                <label>Contact No.:</label> <input type="tel" />
+            </div>
+            <div class="row">
+                <label>Name:</label> <input type="text" />
+                <label>Position:</label> <input type="text" />
+                <label>Company:</label> <input type="text" />
+                <label>Contact No.:</label> <input type="tel" />
+            </div>
+        </section>
+
+        <section class="certification">
+            <h2>Certification</h2>
+            <div class="row">
+                <label>Res. Cert. No.:</label> <input type="text" />
+                <label>Issued at:</label> <input type="text" />
+                <label>Date Issued:</label> <input type="date" />
+            </div>
+            <div class="row">
+                <label>SSS:</label> <input type="text" />
+                <label>TIN:</label> <input type="text" />
+            </div>
+            <div class="row">
+                <label>NBI No.:</label> <input type="text" />
+                <label>Passport No.:</label> <input type="text" />
+            </div>
+            <p>I certify that the information is true and correct. Any falsehood may result in dismissal.</p>
+            <label>Applicant's Signature:</label> <input type="text" />
+        </section>
+    </div>
+</body>
+</html>
